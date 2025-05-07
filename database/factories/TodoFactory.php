@@ -16,7 +16,7 @@ class TodoFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'note' => $this->faker->word(),
+            'note' => $this->faker->boolean() ? $this->faker->word() : null,
             'finished' => $this->faker->boolean(),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
