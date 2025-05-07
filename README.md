@@ -27,17 +27,20 @@ This project is a simple Todo list application built with Laravel 12, Inertia.js
 
 ### Backend dependencies
 ```bash
-bash composer install php artisan migrate
+composer install
+php artisan migrate:fresh --seed
 ``` 
 
 ### Frontend dependencies
 ```
-bash npm install npm run build
+npm install
+npm run build
 ``` 
 
 ### Run the development server
 ```
-bash php artisan serve npm run dev
+php artisan serve
+npm run dev
 ``` 
 
 The app will be accessible at `http://localhost:8000`.
@@ -48,7 +51,8 @@ The app will be accessible at `http://localhost:8000`.
 
 ### Authentication
 
-This project assumes that you have user authentication set up. Use the provided login/register routes to create an account and log in.
+This project assumes that you have user authentication set up. Use the provided login/register routes to create an account and log in.  
+In seeder is created two users by default (first@example.com, second@example.com).
 
 ### Managing Todos
 
